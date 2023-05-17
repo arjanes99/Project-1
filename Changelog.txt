@@ -1,0 +1,24 @@
+All data obtained from https://divvy-tripdata.s3.amazonaws.com/index.html
+
+202205-divvy-tripdata -> 2022_05_divvy_tripdata
+202206-divvy-tripdata -> 2022_06_divvy_tripdata
+202207-divvy-tripdata -> 2022_07_divvy_tripdata
+202208-divvy-tripdata -> 2022_08_divvy_tripdata
+202209-divvy-publictripdata -> 2022_09_divvy_tripdata
+202210-divvy-tripdata -> 2022_10_divvy_tripdata
+202211-divvy-tripdata -> 2022_11_divvy_tripdata
+202212-divvy-tripdata -> 2022_12_divvy_tripdata
+202301-divvy-tripdata -> 2023_01_divvy_tripdata
+202302-divvy-tripdata -> 2023_02_divvy_tripdata
+202303-divvy-tripdata -> 2023_03_divvy_tripdata
+202304-divvy-tripdata -> 2023_04_divvy_tripdata
+
+---- Normalized file naming conventions to be consistient.
+---- Removed duplicates
+---- created columns "ride_length" and "day_of_week"
+---- Did not remove data where there were null values for stations;
+those are irrelevant to the objectives
+---- Removed values in ride length where values were negative. Left zero values;
+they could be cancellations.
+---- Compiled all changes above into one spreadsheet for analyzing, named Bikes_relevant_data
+---- Copied tables to a new sheet to reduce file size, named Final_numbers
